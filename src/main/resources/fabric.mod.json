@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "cursedearth",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Cursed Earth",
+  "description": "Curse3d Earth spawns mobs quickly",
   "authors": [
     "Me!"
   ],
@@ -19,7 +19,10 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "tfar.cursedearth.CursedEarth"
+    ],
+    "client": [
+      "tfar.cursedearth.CursedEarthClient"
     ]
   },
   "mixins": [
@@ -28,8 +31,7 @@
 
   "depends": {
     "fabricloader": ">=0.7.2",
-    "fabric": "*",
-    "minecraft": "1.15.x"
+    "fabric": "*"
   },
   "suggests": {
     "flamingo": "*"

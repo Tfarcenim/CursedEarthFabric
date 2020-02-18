@@ -1,11 +1,12 @@
 {
   "required": true,
-  "package": "net.fabricmc.example.mixin",
+  "package": "tfar.cursedearth.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
+    "ServerWorldAccessor",
+    "MobSpawnerLogicMixin"
   ],
   "client": [
-    "ExampleMixin"
   ],
   "injectors": {
     "defaultRequire": 1
