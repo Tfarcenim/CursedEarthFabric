@@ -4,7 +4,9 @@
   "compatibilityLevel": "JAVA_8",
   "mixins": [
     "ServerWorldAccessor",
-    "MobSpawnerLogicMixin"
+    "MobSpawnerLogicMixin",
+    "EntityTypeTagsMixin",
+    "BlockTagsMixin"
   ],
   "client": [
   ],

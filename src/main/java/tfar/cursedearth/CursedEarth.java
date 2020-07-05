@@ -23,10 +23,9 @@ public class CursedEarth implements ModInitializer {
 
 	public static final Block cursed_earth = new CursedEarthBlock(Block.Settings.copy(Blocks.GRASS_BLOCK));
 	public static final Item cursed_earth_item = new BlockItem(cursed_earth,new Item.Settings().group(ItemGroup.BUILDING_BLOCKS));
-
-	public static final Tag<EntityType<?>> blacklisted_entities = new EntityTypeTags.CachingTag(new Identifier(MODID, "blacklisted"));
-	public static final Tag<Block> spreadable = new CachingTag(new Identifier(MODID, "spreadable"));
-	public static final Tag<Block> spawner_activators = new CachingTag(new Identifier(MODID, "spawner_activators"));
+	public static Tag<EntityType<?>> blacklisted_entities;
+	public static Tag<Block> spreadable;
+	public static Tag<Block> spawner_activators;
 
 	@Override
 	public void onInitialize() {

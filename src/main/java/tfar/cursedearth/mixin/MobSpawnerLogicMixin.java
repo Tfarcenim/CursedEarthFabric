@@ -21,6 +21,6 @@ public abstract class MobSpawnerLogicMixin {
 		if (ci.getReturnValue())return;
 		BlockPos pos = getPos();
 		World world = getWorld();
-		ci.setReturnValue(world.getBlockState(pos.down()).getBlock().matches(CursedEarth.spawner_activators));
+		ci.setReturnValue(world.getBlockState(pos.down()).getBlock().isIn(CursedEarth.spawner_activators));
 	}
 }
